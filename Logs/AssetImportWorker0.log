@@ -1840,3 +1840,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 646.139782 seconds.
+  path: Assets/Materials/New Material 1.mat
+  artifactKey: Guid(134f4ada9ba187d46b96a44b0003b5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/New Material 1.mat using Guid(134f4ada9ba187d46b96a44b0003b5df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f012a35b98a28842ec66a090bb31a0') in 0.110494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/Materials/RED.mat
+  artifactKey: Guid(d991fbf81fb687f438590d980a84e406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/RED.mat using Guid(d991fbf81fb687f438590d980a84e406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d8b91ed033754725203455fad91724e') in 0.011616 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

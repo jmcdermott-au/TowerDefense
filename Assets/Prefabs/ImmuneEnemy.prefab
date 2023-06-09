@@ -111,6 +111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a26cc661bdaaf2c458acad2433119d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  immunity1: 1
+  immunity2: 0
+  immunity3: 0
   speed: 10
   health: 100
   moneyGained: 25

@@ -110,6 +110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274e8d471cc8ab144b495d602f06d96b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletImmunity1: 1
+  bulletImmunity2: 0
+  bulletImmunity3: 0
   immunitySelfPrefab: {fileID: 122070204830891862}
   speed: 70
   impactEffect: {fileID: 58168272516694429, guid: 59d7b0d7a73a5f7479c1b9c3afd7bb55, type: 3}

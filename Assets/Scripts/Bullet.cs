@@ -5,9 +5,16 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
 
+    [Header("IMMUNITIES")]
+    public bool bulletImmunity1;
+    public bool bulletImmunity2;
+    public bool bulletImmunity3;
+    [Space(20)]
+
     //it would be pretty useful if these attributes could be overriden / modified by the tower itself
     private Transform target;
-    public GameObject immunitySelfPrefab; //going to override this on spawn in tower
+    
+
 
 
     [Space(20)]
@@ -97,13 +104,11 @@ public class Bullet : MonoBehaviour
     {
         Enemy e = enemy.GetComponent<Enemy>();
 
-        //if the enemy's bullet immunity gameobject is the same gameobject that the instance is
-        //so what is the variable that represents the bullet prefab the instance spawns from
-        //the tower is what creates the bullet object so this is hard
-        if (e.bulletImmunity != immunitySelfPrefab) //in this context gameObject is the instance of the bullet
+       
+        if (ImmunityCheck(e)) //does immunity check
         {
-            //if the bullet immunity gameobject is not the gameobject this is attached to
-            //and the e not null
+            
+            //checking for enemy
             if (e != null)
             {
                 e.TakeDamage(damage);
@@ -111,4 +116,28 @@ public class Bullet : MonoBehaviour
         }
     }
 
+
+    //check each immunity the enemy has that is true, if the bullet's respective immunity is also true, return false
+    //else return true
+
+    //the way i have done this is pretty shit.
+    public bool ImmunityCheck(Enemy enemy)
+    {
+        if (enemy.immunity1 & bulletImmunity1 == true)
+        {
+            return false;
+        }
+
+        if (enemy.immunity2 & bulletImmunity2 == true)
+        {
+            return false;
+        }
+        
+        if (enemy.immunity3 & bulletImmunity3 == true)
+        {
+            return false;
+        }
+
+        return true;
+    }
 }

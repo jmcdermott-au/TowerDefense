@@ -4,7 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("IMMUNITIES")]
+    public bool immunity1;
+    public bool immunity2;
+    public bool immunity3;
+    [Space(20)]
 
+    [Header("Attributes")]
     public float speed = 10f;
 
     public int health = 100;
@@ -14,9 +20,11 @@ public class Enemy : MonoBehaviour
     private int waypointIndex = 0;
 
     public int moneyGained = 25;
+
     
-    //make this a type of projectile that it's immune to.
-    public GameObject bulletImmunity;
+
+
+    
 
     private void Start()
     {

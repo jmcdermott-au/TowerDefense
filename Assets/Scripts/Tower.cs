@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
+    //THIS IS THE DEFAULT TOWER, CHANGE ITS STATS
 
     private Transform target;
 
@@ -15,6 +16,10 @@ public class Tower : MonoBehaviour
     //these overrite the default values of the bullet
     public int damage = 30;
     public float bulletSpeed = 70f;
+    public float explosionRadius = 0f;
+    public bool immunity1;
+    public bool immunity2;
+    public bool immunity3;
 
     [Header("Unity Fields")]
     public string enemyTag = "Enemy";
@@ -66,12 +71,8 @@ public class Tower : MonoBehaviour
         //create bullet, at firepoint, in direction of firepoint
         Bullet bullet = bulletGameObject.GetComponent<Bullet>();
 
-        //this is probably where i can overrite the bullet stats
-        //let me try here
-        bullet.speed = bulletSpeed;
-        bullet.damage = damage;
-        bullet.immunitySelfPrefab = bulletPrefab;
-
+        OverrideBulletStats(bullet);
+        
         //if bullet got a target
         if (bullet != null)
         {
@@ -79,7 +80,20 @@ public class Tower : MonoBehaviour
         }
 
     }
+    /// <summary>
+    /// overrides all of the stats of the default projectile using the stats from the tower
+    /// </summary>
+    /// <param name="bullet"></param>
+    public void OverrideBulletStats(Bullet bullet)
+    {
+        bullet.speed = bulletSpeed;
+        bullet.damage = damage;
+        bullet.explosionRadius = explosionRadius;
+        bullet.bulletImmunity1 = immunity1;
+        bullet.bulletImmunity2 = immunity2;
+        bullet.bulletImmunity3 = immunity3;
 
+    }
     void UpdateTarget()
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag(enemyTag);

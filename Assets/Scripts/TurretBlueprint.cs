@@ -4,8 +4,7 @@ using UnityEngine;
 
 //ignore this script I am not using it as I dont understand blueprints
 
-[System.Serializable]
-public class TurretBlueprint 
+public class TurretBlueprint:MonoBehaviour 
 {
     public GameObject prefab;
     public int cost;

@@ -30,12 +30,20 @@ public class Enemy : MonoBehaviour
         }
     }
 
+
+    /// <summary>
+    /// Adds Currency, destroys gameObject
+    /// </summary>
     void Die()
     {
         Currency.money += moneyGained;
         Destroy(gameObject);
     }
 
+
+
+    //from what i understand, each set of waypoints is the same for each wave, so it'd take quite a bit of effort to separate them.
+    //so currently its impossible to create multiple lanes
     private void Update()
     {
         Vector3 dir = target.position - transform.position;

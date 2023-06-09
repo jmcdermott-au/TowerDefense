@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
-
+    //maybe for waves, what i should do, is create a non-mono class that contains an array of prefabs, and then other things.
 
     //this is an array that will contain all of the enemies to be spawned in a given wave. 
     //to make a new wave, create a new scene with a new instance of this script on something.
@@ -90,6 +90,8 @@ public class WaveSpawner : MonoBehaviour
 
     //russel, I'm changing this method to take an argument, which is going to be the type of enemy being used
         //so SpawnEnemy(Transform), just so i can get this to spawn different enemies, shit like that.
+        //in the future, it also might be useful to give this method an overload, with multipliers for stats on the enemy. 
+        //for example, you could make a custom type of wave where every enemy is 5% faster, or has 5% more health, stuff like that.
     void SpawnEnemy(Transform enemy)
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);

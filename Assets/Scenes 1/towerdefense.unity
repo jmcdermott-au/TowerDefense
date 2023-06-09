@@ -1617,7 +1617,7 @@ GameObject:
   - component: {fileID: 301486673}
   - component: {fileID: 301486672}
   m_Layer: 5
-  m_Name: Turret 1 (2)
+  m_Name: TEST BUTTON
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1687,7 +1687,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 301486673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 915489172}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &301486673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7017,6 +7029,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
   standardTurretPrefab2: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
+  turretToBuild:
+    prefab: {fileID: 0}
+    cost: 0
 --- !u!114 &915489176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16783,7 +16798,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Call SelectTurretToBuild
 --- !u!222 &2050789396
 CanvasRenderer:
   m_ObjectHideFlags: 0

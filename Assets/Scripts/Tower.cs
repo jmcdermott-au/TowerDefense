@@ -8,10 +8,13 @@ public class Tower : MonoBehaviour
     private Transform target;
 
     [Header("Attributes")]
-
+    //would be useful if i could add damage to this
     public float range = 15f;
     public float fireRate = 1f;
     private float fireCooldown = 0f;
+    //these overrite the default values of the bullet
+    public int damage = 30;
+    public float bulletSpeed = 70f;
 
     [Header("Unity Fields")]
     public string enemyTag = "Enemy";
@@ -44,12 +47,14 @@ public class Tower : MonoBehaviour
         //Lerp is smooth transition
         partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 90f);
 
+        //if ready to fire
         if (fireCooldown <= 0f)
         {
+            //call shoot method, reset cooldown based upon firerate
             Shoot();
             fireCooldown = 1f/ fireRate;
         }
-
+        //count down cooldown
         fireCooldown -= Time.deltaTime;
         
     }
@@ -61,6 +66,12 @@ public class Tower : MonoBehaviour
         //create bullet, at firepoint, in direction of firepoint
         Bullet bullet = bulletGameObject.GetComponent<Bullet>();
 
+        //this is probably where i can overrite the bullet stats
+        //let me try here
+        bullet.speed = bulletSpeed;
+        bullet.damage = damage;
+
+        //if bullet got a target
         if (bullet != null)
         {
             bullet.Seek(target);

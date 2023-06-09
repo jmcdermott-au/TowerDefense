@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7208973451825968070}
   - component: {fileID: 4125157266627948195}
   m_Layer: 0
-  m_Name: TurretBlueprint 1
+  m_Name: LongRangeTurretBlueprint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

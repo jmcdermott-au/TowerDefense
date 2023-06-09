@@ -5395,12 +5395,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b64552456735d4194093a074a0a121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurret:
-    prefab: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
-    cost: 100
-  standardTurret2:
-    prefab: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
-    cost: 200
+  standardTurret: {fileID: 0}
+  standardTurret2: {fileID: 0}
 --- !u!1001 &722152117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7029,9 +7025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
   standardTurretPrefab2: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
-  turretToBuild:
-    prefab: {fileID: 0}
-    cost: 0
+  turretToBuild: {fileID: 0}
 --- !u!114 &915489176
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8287,7 +8281,7 @@ GameObject:
   - component: {fileID: 1049781888}
   - component: {fileID: 1049781887}
   m_Layer: 5
-  m_Name: Turret 1
+  m_Name: Default Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8358,13 +8352,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 721696257}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectStandardTurret
-        m_Mode: 1
+      - m_Target: {fileID: 915489175}
+        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
+        m_MethodName: SelectTurretToBuild
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 3917428503572634272, guid: d6f08f1e1fe742a44aecd9fcc322f5c1, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -14997,7 +14991,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Turret
 --- !u!222 &1839936423
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15222,7 +15216,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Long range turret
 --- !u!222 &1858037655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15552,7 +15546,7 @@ GameObject:
   - component: {fileID: 1930004943}
   - component: {fileID: 1930004942}
   m_Layer: 5
-  m_Name: Turret 1 (1)
+  m_Name: LongRange Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15623,13 +15617,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 721696257}
-        m_TargetAssemblyTypeName: Shop, Assembly-CSharp
-        m_MethodName: SelectStandardTurret2
-        m_Mode: 1
+      - m_Target: {fileID: 915489175}
+        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
+        m_MethodName: SelectTurretToBuild
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 4557477184296987634, guid: bf0fdb144ce16d848865614b51e09d37, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

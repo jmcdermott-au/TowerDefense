@@ -39,6 +39,7 @@ public class BuildManager : MonoBehaviour
         }
         //if you have enough money, subtract the currency
         Currency.money -= turretToBuild.cost;
+        Debug.Log(Currency.money);
         //creates a turret on the selected node
        GameObject turret = (GameObject) Instantiate(turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity);
         node.turret = turret;

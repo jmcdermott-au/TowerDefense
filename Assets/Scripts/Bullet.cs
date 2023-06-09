@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+
+    //it would be pretty useful if these attributes could be overriden / modified by the tower itself
     private Transform target;
 
+    [Space(20)]
+    [Header("Attributes")] 
+    
+    //THESE ARE ALL DEFAULTS, CHANGE THESE USING TOWER
     public float speed = 70f;
     public GameObject impactEffect;
 

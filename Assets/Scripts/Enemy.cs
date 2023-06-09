@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
     private int waypointIndex = 0;
 
     public int moneyGained = 25;
+    
+    //make this a type of projectile that it's immune to.
+    public GameObject bulletImmunity;
 
     private void Start()
     {

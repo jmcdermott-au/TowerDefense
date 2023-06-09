@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
 
     //it would be pretty useful if these attributes could be overriden / modified by the tower itself
     private Transform target;
+    public GameObject immunitySelfPrefab; //going to override this on spawn in tower
+
 
     [Space(20)]
     [Header("Attributes")] 
@@ -95,9 +97,17 @@ public class Bullet : MonoBehaviour
     {
         Enemy e = enemy.GetComponent<Enemy>();
 
-        if (e != null)
+        //if the enemy's bullet immunity gameobject is the same gameobject that the instance is
+        //so what is the variable that represents the bullet prefab the instance spawns from
+        //the tower is what creates the bullet object so this is hard
+        if (e.bulletImmunity != immunitySelfPrefab) //in this context gameObject is the instance of the bullet
         {
-            e.TakeDamage(damage);
+            //if the bullet immunity gameobject is not the gameobject this is attached to
+            //and the e not null
+            if (e != null)
+            {
+                e.TakeDamage(damage);
+            }
         }
     }
 

@@ -1688,13 +1688,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 915489172}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 915489175}
+        m_TargetAssemblyTypeName: BuildManager, Assembly-CSharp
+        m_MethodName: SelectTurretToBuild
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 3917428503572634272, guid: d791c577ebbaf25468bd6eea0f0b53d5, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6987,11 +6987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesInWave:
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 85a327de3c2fb844ca4239b220121de7, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 2177cd5f615c806428a2a19be6bd3fb9, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
   enemyPrefab: {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
   spawnPoint: {fileID: 852330893}
   timeBetweenWaves: 5

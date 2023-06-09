@@ -70,6 +70,7 @@ public class Tower : MonoBehaviour
         //let me try here
         bullet.speed = bulletSpeed;
         bullet.damage = damage;
+        bullet.immunitySelfPrefab = bulletPrefab;
 
         //if bullet got a target
         if (bullet != null)

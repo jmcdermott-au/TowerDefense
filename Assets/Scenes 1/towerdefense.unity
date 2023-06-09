@@ -6988,6 +6988,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesInWave:
   - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 559dd9c85499b2f46ba26fbe05b24f23, type: 3}
+  - {fileID: 8419217360747821136, guid: 85a327de3c2fb844ca4239b220121de7, type: 3}
+  - {fileID: 8419217360747821136, guid: 85a327de3c2fb844ca4239b220121de7, type: 3}
+  - {fileID: 8419217360747821136, guid: 85a327de3c2fb844ca4239b220121de7, type: 3}
   enemyPrefab: {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
   spawnPoint: {fileID: 852330893}
   timeBetweenWaves: 5

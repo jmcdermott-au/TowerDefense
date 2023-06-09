@@ -116,10 +116,14 @@ MonoBehaviour:
   fireRate: 1
   damage: 30
   bulletSpeed: 50
+  explosionRadius: 0
+  immunity1: 1
+  immunity2: 0
+  immunity3: 0
   enemyTag: Enemy
   partToRotate: {fileID: 1479054259118970327}
   turnSpeed: 10
-  bulletPrefab: {fileID: 122070204830891862, guid: a310004dd44d12c4c8825e2fd129241d, type: 3}
+  bulletPrefab: {fileID: 122070204830891862, guid: fdadc4b82dcf035498cd6e7cfe55f754, type: 3}
   firePoint: {fileID: 4218152557640896141}
 --- !u!1 &3324113332149618625
 GameObject:

@@ -64,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e8c1eb6117ac0a643849a4f51d068522, type: 2}
+  - {fileID: 2100000, guid: 5e8228166aa3ca343a700a9086e4d677, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,6 +118,7 @@ MonoBehaviour:
   speed: 10
   health: 100
   moneyGained: 25
+  impactEffect: {fileID: 58168272516694429, guid: db4b2f908970c1c4baae25271551748d, type: 3}
 --- !u!1001 &8700377481484015249
 PrefabInstance:
   m_ObjectHideFlags: 0

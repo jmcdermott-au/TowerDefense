@@ -737,3 +737,246 @@ Domain Reload Profiling:
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.42 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3055 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (24.7 KB). Loaded Objects now: 3567.
+Memory consumption went from 112.6 MB to 112.6 MB.
+Total: 2.984900 ms (FindLiveObjects: 0.375600 ms CreateObjectMapping: 0.119000 ms MarkObjects: 2.469900 ms  DeleteObjects: 0.019100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 687.101458 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/circle_02.png
+  artifactKey: Guid(bd4c96396f7cd1a45b9db65d05736b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/circle_02.png using Guid(bd4c96396f7cd1a45b9db65d05736b41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d876689739f78edb1867fd80af532c') in 0.110701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_05.png
+  artifactKey: Guid(b329e55f28eb3944089d621509018bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_05.png using Guid(b329e55f28eb3944089d621509018bfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9689614d63653cfa96ba74a50615e349') in 0.017173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/scorch_01.png
+  artifactKey: Guid(7e2a89d9b8cc03543bbb3249c0db514d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/scorch_01.png using Guid(7e2a89d9b8cc03543bbb3249c0db514d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df0e396e55f892c6f6e7464c720d6bcd') in 0.015295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/flame_05.png
+  artifactKey: Guid(4e0ddddf783d80b4aa567108349834d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/flame_05.png using Guid(4e0ddddf783d80b4aa567108349834d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a725c1e0186bb1180677d5253873a20') in 0.014933 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/light_02.png
+  artifactKey: Guid(22551124afbe94d4d9726b7675af184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/light_02.png using Guid(22551124afbe94d4d9726b7675af184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59cc4ea4a9d3c22d0d636374f7881953') in 0.017398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_02.png
+  artifactKey: Guid(202e3f0573f27bc439aa0d11b68753d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_02.png using Guid(202e3f0573f27bc439aa0d11b68753d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1926ad5993bef7a54a66b4bc45fd8fdc') in 0.014814 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/slash_04.png
+  artifactKey: Guid(6f02813e8ed04564999b1da8e437451c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/slash_04.png using Guid(6f02813e8ed04564999b1da8e437451c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aeaaed2a127a59a6db440958e8bb5a0') in 0.013085 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/spark_05.png
+  artifactKey: Guid(9e8ec8250c6ece147b40adc5ddeb1db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/spark_05.png using Guid(9e8ec8250c6ece147b40adc5ddeb1db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd86c9e57cb76aee6bbb0bff8989f24') in 0.013227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_04.png
+  artifactKey: Guid(1bf3ac6c474d3bd47aa62f4fe1f8320e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_04.png using Guid(1bf3ac6c474d3bd47aa62f4fe1f8320e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c6cf2955144ec931ac20c6a3a331101') in 0.013419 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_07.png
+  artifactKey: Guid(e03ba8e96b186a7419336dd076210231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_07.png using Guid(e03ba8e96b186a7419336dd076210231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d8ed7515666c49db0e1f73f3775b947') in 0.020238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_04.png
+  artifactKey: Guid(f5a832f04044f9a4da38502e0f8003aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_04.png using Guid(f5a832f04044f9a4da38502e0f8003aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17197dd5c203e881534760ed7d1cd11f') in 0.013640 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_06.png
+  artifactKey: Guid(c17dedc826deb5741ac7ca3e9bba3c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_06.png using Guid(c17dedc826deb5741ac7ca3e9bba3c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8448042afd89d475d8dde0ae50fcab5') in 0.014680 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/twirl_01.png
+  artifactKey: Guid(4337c94a37efee64d8492be00e60520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/twirl_01.png using Guid(4337c94a37efee64d8492be00e60520d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1892c87d753bf7c2465aa840c89460e0') in 0.015316 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/scratch_01.png
+  artifactKey: Guid(8af44b2512695294fa6f3e78e1d0465c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/scratch_01.png using Guid(8af44b2512695294fa6f3e78e1d0465c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab255785a5253657fddb0a6f3e0f65f9') in 0.012707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/muzzle_03.png
+  artifactKey: Guid(58abc62c4a9ac1b4f85a930e000b3593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/muzzle_03.png using Guid(58abc62c4a9ac1b4f85a930e000b3593) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3606ee7ae9cf2a80082486cdfed774c6') in 0.014406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/dirt_02.png
+  artifactKey: Guid(533fb72153715304ba629d3628447d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/dirt_02.png using Guid(533fb72153715304ba629d3628447d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fdc86ed88cd64fad20ee7c781651d1') in 0.020964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_06.png
+  artifactKey: Guid(57342885d9047b94f8674edaa67252cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_06.png using Guid(57342885d9047b94f8674edaa67252cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a5926f8e5d2af8f4e1209c7549bf2bc') in 0.013790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_05.png
+  artifactKey: Guid(e36deda40e5366a48901e4cbce7ebe4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_05.png using Guid(e36deda40e5366a48901e4cbce7ebe4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bae2987b8077b09682e11321ad348dde') in 0.016269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_08.png
+  artifactKey: Guid(d80cffb6d1f979a49998808b6ede7a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_08.png using Guid(d80cffb6d1f979a49998808b6ede7a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b56f5d50c10f36b5d839484ea514f1') in 0.018725 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_01.png
+  artifactKey: Guid(83f7d98ace9f2a1449c029f38de96399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_01.png using Guid(83f7d98ace9f2a1449c029f38de96399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c95ce03bf6d64e589dca2c5374254742') in 0.021934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_07.png
+  artifactKey: Guid(ab917494a1629c5448a5d091a151e5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_07.png using Guid(ab917494a1629c5448a5d091a151e5a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f13258ad25fdc83f9df6f18a36f29536') in 0.013004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_09.png
+  artifactKey: Guid(80e7ea0e71249ee41954d26594d503fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_09.png using Guid(80e7ea0e71249ee41954d26594d503fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '098b3138a0ae60f31e49e2e2bd8e90bf') in 0.013369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_03.png
+  artifactKey: Guid(ecd57267b5430434ea9bf71ce1c2944b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/trace_03.png using Guid(ecd57267b5430434ea9bf71ce1c2944b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef4dffa417570205f734d9b70b93b403') in 0.014250 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/flame_04.png
+  artifactKey: Guid(c786c58c46fac9644a8936d1cd8c9710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/flame_04.png using Guid(c786c58c46fac9644a8936d1cd8c9710) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30fc9b98f3e13d316c0de319fb5254c') in 0.013469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/fire_02.png
+  artifactKey: Guid(75d31f0cea394e44e86c8f585a6afbfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/fire_02.png using Guid(75d31f0cea394e44e86c8f585a6afbfe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '797b2d4dddce62345939cb818d3265e6') in 0.014611 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/light_01.png
+  artifactKey: Guid(fd58556acf13c6b4bb3cdcdc30f68dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/light_01.png using Guid(fd58556acf13c6b4bb3cdcdc30f68dcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e78bab44cac50a96ce2d3d351ea03230') in 0.014387 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/slash_01.png
+  artifactKey: Guid(ebac329f54e692f43a7f9b2f7cb22fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/slash_01.png using Guid(ebac329f54e692f43a7f9b2f7cb22fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc52846b3ed841aace4c81352e78484e') in 0.013243 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_09.png
+  artifactKey: Guid(907c05fec5e81a14e9a9009b8ff18d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_09.png using Guid(907c05fec5e81a14e9a9009b8ff18d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a54a9b3832837c47505b559d0de6c247') in 0.013697 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_07.png
+  artifactKey: Guid(a142264c667664f458eaf7754f44454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_07.png using Guid(a142264c667664f458eaf7754f44454a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374d5e04739fe22ec91ba80c2e8e14aa') in 0.014823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_10.png
+  artifactKey: Guid(c6334f3ecd1576a449ff01165a171266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/smoke_10.png using Guid(c6334f3ecd1576a449ff01165a171266) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24f3a83212586ed938568a0dfb9cf585') in 0.012762 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/flame_01.png
+  artifactKey: Guid(e017b183dc21bcc44b50a7e47937664f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/flame_01.png using Guid(e017b183dc21bcc44b50a7e47937664f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '323cd8938864737934e521fa06e46b19') in 0.012279 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/flare_01.png
+  artifactKey: Guid(f559cdff27e699349aef6a4569a18af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/flare_01.png using Guid(f559cdff27e699349aef6a4569a18af2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f38dfc2153329b7945a67acc9f1834') in 0.012464 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/spark_03.png
+  artifactKey: Guid(049b8ca934a0c404c82caaefc14fa853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/spark_03.png using Guid(049b8ca934a0c404c82caaefc14fa853) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71790c39602fa8bd6be57c5fadfdfe0') in 0.014653 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_02.png
+  artifactKey: Guid(c3274b221916b414ba307a1ca5c69b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/star_02.png using Guid(c3274b221916b414ba307a1ca5c69b11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98f47a1ed11f6731562fb49159e1d71e') in 0.013718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/scorch_03.png
+  artifactKey: Guid(ccbb011014f97684290efebc92d9ce16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/scorch_03.png using Guid(ccbb011014f97684290efebc92d9ce16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57293d9398d13042b117d40fd53e0a8b') in 0.013232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/dirt_03.png
+  artifactKey: Guid(cec75251d86bafa49b16f28f86bf7f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/dirt_03.png using Guid(cec75251d86bafa49b16f28f86bf7f79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3dd7e7cea8032c12a32e8631e9e1121') in 0.013058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Particles/kenney_particle-pack/PNG (Transparent)/fire_01.png
+  artifactKey: Guid(3b316876706e74d4fa2c1278224d1a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Particles/kenney_particle-pack/PNG (Transparent)/fire_01.png using Guid(3b316876706e74d4fa2c1278224d1a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa9d625a42d05ba5a5425da3510326c') in 0.013046 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

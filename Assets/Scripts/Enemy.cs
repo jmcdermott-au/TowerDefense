@@ -21,10 +21,14 @@ public class Enemy : MonoBehaviour
 
     public int moneyGained = 25;
 
-    
+    public GameObject impactEffect;
 
 
-    
+
+    public void Awake()
+    {
+        
+    }
 
     private void Start()
     {
@@ -38,6 +42,7 @@ public class Enemy : MonoBehaviour
         if (health <= 0)
         {
             Die();
+
         }
     }
 
@@ -47,7 +52,15 @@ public class Enemy : MonoBehaviour
     /// </summary>
     void Die()
     {
+
         Currency.money += moneyGained;
+
+        if (impactEffect != null)
+        {
+            GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(effectIns, 2f);
+        }
+
         Destroy(gameObject);
     }
 

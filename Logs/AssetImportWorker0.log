@@ -696,3 +696,67 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 536.906104 seconds.
+  path: Assets/Scenes 1/towerdefense.unity
+  artifactKey: Guid(29e119b659ab2dc438fd25901a5d0f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes 1/towerdefense.unity using Guid(29e119b659ab2dc438fd25901a5d0f0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e9f8470fc0d5918a49fac030b95a7e') in 0.015603 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 13.299419 seconds.
+  path: Assets/Scenes 1/LevelsWaves
+  artifactKey: Guid(24b78cc2e040ae940b7da8fd46032f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes 1/LevelsWaves using Guid(24b78cc2e040ae940b7da8fd46032f82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e607cf69e1e4324ace835194b242c21') in 0.007625 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.410853 seconds.
+  path: Assets/Scenes 1/towerdefense 1.unity
+  artifactKey: Guid(011434aa11726e949a2e10aa89693f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes 1/towerdefense 1.unity using Guid(011434aa11726e949a2e10aa89693f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aabbf16e5bde32f5390f13584a119ae') in 0.008380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.438664 seconds.
+  path: Assets/Scenes 1/LevelsWaves/Wave1.unity
+  artifactKey: Guid(011434aa11726e949a2e10aa89693f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes 1/LevelsWaves/Wave1.unity using Guid(011434aa11726e949a2e10aa89693f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4b917813636c2fa969c97bc2426458e') in 0.008757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.877080 seconds.
+  path: Assets/Scenes 1/LevelsWaves/Wave1 1.unity
+  artifactKey: Guid(8251fdbfa6c044840bbfa8a2b2829efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes 1/LevelsWaves/Wave1 1.unity using Guid(8251fdbfa6c044840bbfa8a2b2829efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b231b18a27b47d682a6a7c0cf768eb') in 0.009791 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.910657 seconds.
+  path: Assets/Scenes 1/LevelsWaves/Wave2.unity
+  artifactKey: Guid(8251fdbfa6c044840bbfa8a2b2829efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes 1/LevelsWaves/Wave2.unity using Guid(8251fdbfa6c044840bbfa8a2b2829efc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f74bbf98a3933503a5eea4398120526') in 0.010262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.700520 seconds.
+  path: Assets/Prefabs/BowSkeleton.prefab
+  artifactKey: Guid(5ae54ea3b9617b845993f98ae20fa178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BowSkeleton.prefab using Guid(5ae54ea3b9617b845993f98ae20fa178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '867ad02820f664790d1a17af97ce7eeb') in 0.123423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Prefabs/Immunity Tower.prefab
+  artifactKey: Guid(3612c0524e9f7fc458856b1358769b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Immunity Tower.prefab using Guid(3612c0524e9f7fc458856b1358769b86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b57d77aa5a8dfe6ffecaf99534152e8') in 0.014939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Prefabs/GunSkeleton.prefab
+  artifactKey: Guid(b7daa94312b1c644f8c469bc65cb891f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GunSkeleton.prefab using Guid(b7daa94312b1c644f8c469bc65cb891f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af2005485b50f99f0046eb6c57e98ae') in 0.023721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Prefabs/SwordProj.prefab
+  artifactKey: Guid(9c3f99fa7ea241b4895741a20d62172a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SwordProj.prefab using Guid(9c3f99fa7ea241b4895741a20d62172a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d713406183e96556954cb06d3ec166') in 0.015521 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

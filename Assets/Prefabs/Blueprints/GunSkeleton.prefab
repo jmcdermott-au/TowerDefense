@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7883975582467818132}
   - component: {fileID: 3485057686111592433}
   m_Layer: 0
-  m_Name: TurretBlueprint
+  m_Name: GunSkeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6041883929732774476, guid: b7daa94312b1c644f8c469bc65cb891f, type: 3}
-  cost: 10
+  cost: 100

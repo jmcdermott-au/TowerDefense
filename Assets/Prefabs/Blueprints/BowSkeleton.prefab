@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7208973451825968070}
   - component: {fileID: 4125157266627948195}
   m_Layer: 0
-  m_Name: LongRangeTurretBlueprint
+  m_Name: BowSkeleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6041883929732774476, guid: 5ae54ea3b9617b845993f98ae20fa178, type: 3}
-  cost: 20
+  cost: 200

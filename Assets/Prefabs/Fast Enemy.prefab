@@ -118,6 +118,7 @@ MonoBehaviour:
   speed: 25
   health: 100
   moneyGained: 35
+  impactEffect: {fileID: 58168272516694429, guid: db4b2f908970c1c4baae25271551748d, type: 3}
 --- !u!1001 &4442799387350558718
 PrefabInstance:
   m_ObjectHideFlags: 0

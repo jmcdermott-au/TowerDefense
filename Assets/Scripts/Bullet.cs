@@ -37,6 +37,7 @@ public class Bullet : MonoBehaviour
     {
 
         //if the target is destroyed then destroy our bullet to.
+        //is this even useful? or can we make it so it will home in on the nearest target instead?
         if (target == null) 
         {
             Destroy(gameObject);

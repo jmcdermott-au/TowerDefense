@@ -10,6 +10,8 @@ public class Tower : MonoBehaviour
 
     [Header("Attributes")]
     //would be useful if i could add damage to this
+
+    public int projPerShot = 1;
     public float range = 15f;
     public float fireRate = 1f;
     private float fireCooldown = 0f;
@@ -56,7 +58,11 @@ public class Tower : MonoBehaviour
         if (fireCooldown <= 0f)
         {
             //call shoot method, reset cooldown based upon firerate
-            Shoot();
+            for (int i = 0; i < projPerShot; i++) 
+            {
+                Shoot();
+            }
+            
             fireCooldown = 1f/ fireRate;
         }
         //count down cooldown

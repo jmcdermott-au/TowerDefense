@@ -2,19 +2,32 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class WobblyText : MonoBehaviour
 {
+
     public TextMeshProUGUI text;
     public float speed = 2f;
     public float magnitude = 10f;
+    
 
     public void Awake()
     {
         text = GetComponent<TextMeshProUGUI>();
+
     }
     private void Update()
     {
+        
+            WobbleText();
+        
+    }
+
+    public void WobbleText()
+    {
+
+
         text.ForceMeshUpdate();
         var textInfo = text.textInfo;
 
@@ -43,6 +56,10 @@ public class WobblyText : MonoBehaviour
             text.UpdateGeometry(meshInfo.mesh, i);
         }
     }
+
+
+
+
 
 
 }

@@ -5,6 +5,17 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
+    #region WaveEnd
+    public GameObject winDisplay;
+    public void WinWave()
+    {
+        Time.timeScale = 0f;
+        winDisplay.SetActive(true);
+    }
+    
+    #endregion
+
+    #region Attributes
     //maybe for waves, what i should do, is create a non-mono class that contains an array of prefabs, and then other things.
 
     //this is an array that will contain all of the enemies to be spawned in a given wave. 
@@ -12,7 +23,10 @@ public class WaveSpawner : MonoBehaviour
     //then, in the inspector, you can edit this array to add/remove enemies from it. Drag enemy prefabs into that array.
     public Transform[] enemiesInWave;
 
-    public bool waveSpawned;
+    public GameObject[] enemiesAlive;
+
+    public bool waveSpawned = false;
+    public bool readyToSpawnWave = false;
 
     //the prefab being spawned
     public Transform enemyPrefab;
@@ -26,34 +40,81 @@ public class WaveSpawner : MonoBehaviour
     //the time between waves, self explanitory
     public float timeBetweenWaves = 5f;
     //seconds between each wave
-    private float countdown = 2f;
-    //initial countdown
-
-    //what wave you're up to 
-    private int waveIndex = 1;
+    private float countdown =5f;
+   
 
     //the text displaying the wave
     public Text waveCountDownText;
-
-    private void Update()
+    public  bool AllEnemiesdead()
     {
 
-        //if the countdown is done, start the coroutine to start the wave
-     if (countdown <= 0f)
+        enemiesAlive = GameObject.FindGameObjectsWithTag("Enemy");
+        if (enemiesAlive.Length == 0)
         {
-            //start coroutine
-            StartCoroutine(SpawnWave());
-            //countdown = timeBetweenWaves; //reset countdown
+            return true;
         }
-
-     //every frame, but adjusted for frames, subtract the countdown
-        countdown -= Time.deltaTime;
-        //update the countdown from whole number to whole number
-        waveCountDownText.text = Mathf.Round(countdown).ToString();
-        //mathf Round will count  to whole number before we display
+        else
+        {
+            return false;
+        }
     }
 
 
+
+    #endregion
+
+    #region Unity Methods
+    public void Awake()
+    {
+        readyToSpawnWave = false;
+        waveSpawned = false;
+        waveCountDownText.text = "ready to spawn wave";
+    }
+
+    
+    private void Update()
+    {
+
+        if (AllEnemiesdead() & waveSpawned)
+        {
+            WinWave();
+        }
+
+
+        if (readyToSpawnWave)
+        {
+
+
+            if (waveSpawned == false)
+            {
+                //if the countdown is done, start the coroutine to start the wave
+                if (countdown <= 0f)
+                {
+                    //start coroutine
+                    StartCoroutine(SpawnWave());
+                    waveSpawned = true;
+                    Destroy(waveCountDownText);
+                    //countdown = timeBetweenWaves; //reset countdown
+                }
+
+                //every frame, but adjusted for frames, subtract the countdown
+                countdown -= Time.deltaTime;
+                //update the countdown from whole number to whole number
+                waveCountDownText.text = Mathf.Round(countdown).ToString();
+
+                //mathf Round will count  to whole number before we display
+            }
+        }
+
+        
+    }
+    #endregion
+
+    #region Spawning
+    public void ReadyToSpawn()
+    {
+        readyToSpawnWave = true;
+    }
     //this is where spawning the whole wave happens
     IEnumerator SpawnWave()
     {
@@ -79,20 +140,6 @@ public class WaveSpawner : MonoBehaviour
         
     }
 
-
-    //the way i want this to work, is create an array with a buncha prefabs in it, 
-    //Transform[] EnemiesInWave;
-    //foreach Transform in EnemiesInWave;
-        //SpawnEnemy(the enemy being spawned, like using an index in the array)
-        //wait
-
-
-    //spawn an enemy using instantiate a prefab
-
-    //russel, I'm changing this method to take an argument, which is going to be the type of enemy being used
-        //so SpawnEnemy(Transform), just so i can get this to spawn different enemies, shit like that.
-        //in the future, it also might be useful to give this method an overload, with multipliers for stats on the enemy. 
-        //for example, you could make a custom type of wave where every enemy is 5% faster, or has 5% more health, stuff like that.
     void SpawnEnemy(Transform enemy)
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
@@ -100,5 +147,7 @@ public class WaveSpawner : MonoBehaviour
         //theoretically rn it should spawn five enemies
     }
 
+    #endregion
 
+    
 }

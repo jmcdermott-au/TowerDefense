@@ -12,6 +12,7 @@ public class WaveSpawner : MonoBehaviour
     //then, in the inspector, you can edit this array to add/remove enemies from it. Drag enemy prefabs into that array.
     public Transform[] enemiesInWave;
 
+    public bool waveSpawned;
 
     //the prefab being spawned
     public Transform enemyPrefab;
@@ -42,7 +43,7 @@ public class WaveSpawner : MonoBehaviour
         {
             //start coroutine
             StartCoroutine(SpawnWave());
-            countdown = timeBetweenWaves; //reset countdown
+            //countdown = timeBetweenWaves; //reset countdown
         }
 
      //every frame, but adjusted for frames, subtract the countdown

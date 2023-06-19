@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+
+   
+
+    private Lives livesScript;
+
     [Header("IMMUNITIES")]
     public bool immunity1;
     public bool immunity2;
@@ -25,13 +30,14 @@ public class Enemy : MonoBehaviour
 
 
 
-    public void Awake()
-    {
-        
-    }
+   
 
     private void Start()
     {
+        
+        GameObject gameManager = GameObject.Find("GameManager");
+        livesScript = gameManager.GetComponent<Lives>();
+        
         target = WayPoints.points[0];
     }
 
@@ -52,9 +58,10 @@ public class Enemy : MonoBehaviour
     /// </summary>
     void Die()
     {
-
+        //increase money
         Currency.money += moneyGained;
 
+        //enemy death particles
         if (impactEffect != null)
         {
             GameObject effectIns = (GameObject)Instantiate(impactEffect, transform.position, transform.rotation);
@@ -88,6 +95,9 @@ public class Enemy : MonoBehaviour
     {
         if (waypointIndex >= WayPoints.points.Length -1)
         {
+            livesScript.lives -= 1; // Increment the lives variable in the Lives script
+            livesScript.UpdateLives(); // Call the UpdateLives() method
+            
             Destroy(gameObject);
             return;
         }

@@ -16,6 +16,6 @@ public class Currency : MonoBehaviour
 
     public void FixedUpdate()
     {
-        textMeshPro.text = money.ToString() + "$";
+        textMeshPro.text = money.ToString() + " bones";
     }
 }

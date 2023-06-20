@@ -2253,18 +2253,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 320014351}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &320014354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13191,22 +13179,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winDisplay: {fileID: 155305514}
-  enemiesInWave:
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
-  - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
+  waves:
+  - enemiesInWave:
+    - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
+    - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
+    - {fileID: 8419217360747821136, guid: 73159319514fd41439426b8e7cc315b3, type: 3}
+  - enemiesInWave:
+    - {fileID: 8419217360747821136, guid: 85a327de3c2fb844ca4239b220121de7, type: 3}
+    - {fileID: 8419217360747821136, guid: 85a327de3c2fb844ca4239b220121de7, type: 3}
+  - enemiesInWave:
+    - {fileID: 8419217360747821136, guid: 2177cd5f615c806428a2a19be6bd3fb9, type: 3}
+    - {fileID: 8419217360747821136, guid: 2177cd5f615c806428a2a19be6bd3fb9, type: 3}
+  currentWaveIndex: 0
   enemiesAlive: []
   waveSpawned: 0
   readyToSpawnWave: 0
@@ -25174,7 +25158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 14, y: -46.33}
+  m_AnchoredPosition: {x: 14, y: -46.329956}
   m_SizeDelta: {x: 269.6565, y: 92.6609}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101029199

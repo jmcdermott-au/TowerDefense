@@ -5,27 +5,59 @@ using UnityEngine.UI;
 
 public class WaveSpawner : MonoBehaviour
 {
+
+    //the code for this should be:
+    // if readyToSpawnWave = true
+        //if waveSpawned = false
+            //if countdown <= 0
+                //spawn Wave CurrentWave
+                //waveSpawned = true
+            //countdown--
+    //if All enemies are dead
+    //waveindex++, readyToSpawnWave = false, waveSpawned = false
+    
+    //if waveIndex > Lastwave
+    //WinLevel();
+
+
+
+
+    [System.Serializable]
+    public class Wave //wave contains an array, of enemies
+    {
+        public Transform[] enemiesInWave;
+    }
+
     #region WaveEnd
     public GameObject winDisplay;
-    public void WinWave()
+
+    /// <summary>
+    /// Sets timescale to 0, and sets gameobject winDisplay to be active.
+    /// Use this when the player has beaten all waves in a level.
+    /// </summary>
+    public void WinLevel()
     {
         Time.timeScale = 0f;
         winDisplay.SetActive(true);
     }
-    
+
     #endregion
 
     #region Attributes
-    //maybe for waves, what i should do, is create a non-mono class that contains an array of prefabs, and then other things.
 
-    //this is an array that will contain all of the enemies to be spawned in a given wave. 
-    //to make a new wave, create a new scene with a new instance of this script on something.
-    //then, in the inspector, you can edit this array to add/remove enemies from it. Drag enemy prefabs into that array.
-    public Transform[] enemiesInWave;
+    //an array that contains the waves in a level
+    public Wave[] waves;
+    
+    //the index of the wave we are on
+    public int currentWaveIndex = 0;
 
+    //enemies currently alive
     public GameObject[] enemiesAlive;
 
+    //has the current wave spawned
     public bool waveSpawned = false;
+    
+    //are we ready to spawn the next wave
     public bool readyToSpawnWave = false;
 
     //the prefab being spawned
@@ -45,7 +77,12 @@ public class WaveSpawner : MonoBehaviour
 
     //the text displaying the wave
     public Text waveCountDownText;
-    public  bool AllEnemiesdead()
+    
+    /// <summary>
+    /// If all enemies are dead, return true.
+    /// </summary>
+    /// <returns></returns>
+    public bool AllEnemiesdead()
     {
 
         enemiesAlive = GameObject.FindGameObjectsWithTag("Enemy");
@@ -66,44 +103,66 @@ public class WaveSpawner : MonoBehaviour
     #region Unity Methods
     public void Awake()
     {
+        //not ready to spawn wave
         readyToSpawnWave = false;
+        //havent spawned the wave
         waveSpawned = false;
-        waveCountDownText.text = "ready to spawn wave";
+        
     }
 
     
     private void Update()
     {
+        
+        
 
-        if (AllEnemiesdead() & waveSpawned)
-        {
-            WinWave();
-        }
-
-
+        //if ready to spawn the wave
         if (readyToSpawnWave)
         {
 
-
+            //and the wave has not spawned
             if (waveSpawned == false)
             {
-                //if the countdown is done, start the coroutine to start the wave
+                
+                //if the countdown is done, start the wave
                 if (countdown <= 0f)
                 {
-                    //start coroutine
+                    //Spawn the wave
                     StartCoroutine(SpawnWave());
                     waveSpawned = true;
-                    Destroy(waveCountDownText);
-                    //countdown = timeBetweenWaves; //reset countdown
+                    waveCountDownText.text = ""; //set countdown text to nothing
+                    
                 }
 
-                //every frame, but adjusted for frames, subtract the countdown
+                //decrement countdown
                 countdown -= Time.deltaTime;
-                //update the countdown from whole number to whole number
+                //update the countdown
                 waveCountDownText.text = Mathf.Round(countdown).ToString();
 
-                //mathf Round will count  to whole number before we display
+               
             }
+
+            //if the player has finished that wave
+            if (waveSpawned & AllEnemiesdead())
+            {
+                //if that was the last wave
+                if (currentWaveIndex == waves.Length -1)
+                {
+                    WinLevel();
+                    return;
+                }
+                //move on to next wave
+                currentWaveIndex++;
+                //wave is not ready to spawn
+                readyToSpawnWave = false;
+                countdown = timeBetweenWaves;
+                
+            }
+        }
+        if (!readyToSpawnWave)
+        {
+            waveCountDownText.text = "ready to spawn wave";
+            waveSpawned = false;
         }
 
         
@@ -111,40 +170,50 @@ public class WaveSpawner : MonoBehaviour
     #endregion
 
     #region Spawning
+    /// <summary>
+    /// Sets ReadyToSpawn to be true.
+    /// </summary>
     public void ReadyToSpawn()
     {
         readyToSpawnWave = true;
     }
-    //this is where spawning the whole wave happens
+    
+    /// <summary>
+    /// Spawns the Wave at currentWaveIndex in Waves[].
+    /// </summary>
+    /// <returns></returns>
     IEnumerator SpawnWave()
     {
 
-        for (int i = 0; i < enemiesInWave.Length; i++)
+        //if all waves completed, win level
+        if (currentWaveIndex > waves.Length)
         {
-            SpawnEnemy(enemiesInWave[i]);
-            yield return new WaitForSeconds(timeBetweenEnemys);
+            Debug.Log("All waves completed");
+            WinLevel();
         }
-        
+        else //if all waves have not been completed
+        {
+            //currentWave is the wave being spawned
+            Wave currentWave = waves[currentWaveIndex];
 
+            //spawn the enemies in that wave
+            for (int i = 0; i < currentWave.enemiesInWave.Length; i++)
+            {
+                SpawnEnemy(currentWave.enemiesInWave[i]);
+                yield return new WaitForSeconds(timeBetweenEnemys);
+            }
+        }
 
-        ////foreach in the wave index, spawn an enemy
-        //for (int i = 0; i < waveIndex; i++)
-        //{
-        //    SpawnEnemy(enemyPrefab);
-        //    //spawn an enemy, then wait timeBetweenEnemies to spawn another
-        //    yield return new WaitForSeconds(timeBetweenEnemys);
-        //}
-        ////debug the wave index, then increment index
-        //Debug.Log($"Wave No. {waveIndex}");
-        //waveIndex++;
-        
     }
 
+    /// <summary>
+    /// Instantiates an enemy prefab at the spawnpoint.
+    /// </summary>
+    /// <param name="enemy"></param>
     void SpawnEnemy(Transform enemy)
     {
         Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
-        Debug.Log("Spawned " + enemy); //logging in the console the enemy spawned
-        //theoretically rn it should spawn five enemies
+        Debug.Log("Spawned " + enemy); 
     }
 
     #endregion

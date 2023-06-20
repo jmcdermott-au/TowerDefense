@@ -576,6 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e6541a417b9e74ca355adaad1aad6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projPerShot: 1
   range: 15
   fireRate: 1
   damage: 30

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BuildManager : MonoBehaviour
 {
+    //public GameObject buttonBadness;
+
 
     public static BuildManager instance;
 
@@ -23,7 +25,7 @@ public class BuildManager : MonoBehaviour
 
 
     [SerializeField]
-    private TurretBlueprint turretToBuild;
+    public TurretBlueprint turretToBuild; //TEMP MAKING PUBLIC
 
     public bool CanBuild { get { return turretToBuild != null; } }
     //check if turret to build is not equal to null, if true we can build
@@ -57,7 +59,7 @@ public class BuildManager : MonoBehaviour
     public void SelectTurretToBuild(GameObject turret)
     {
         turretToBuild = turret.GetComponent<TurretBlueprint>();
-
+       
     }
 
 }

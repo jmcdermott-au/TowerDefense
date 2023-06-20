@@ -25,7 +25,7 @@ public class SwordDamage : MonoBehaviour
             Enemy enemy = other.GetComponent<Enemy>();
             if (enemy != null)
             {
-                enemy.TakeDamage(100);
+                enemy.TakeDamage(damage);
                 Debug.Log("HIT");
             }
         }

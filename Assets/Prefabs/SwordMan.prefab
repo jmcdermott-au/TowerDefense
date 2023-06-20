@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swordCollider: {fileID: 1523520656900222704}
   isSwinging: 0
-  damage: 100
+  damage: 45
 --- !u!65 &1523520656900222704
 BoxCollider:
   m_ObjectHideFlags: 0

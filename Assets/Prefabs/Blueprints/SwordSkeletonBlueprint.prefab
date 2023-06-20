@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 6041883929732774476, guid: 9c87bb975daab844fa727caf4dbf6cd6, type: 3}
-  cost: 1
+  cost: 300

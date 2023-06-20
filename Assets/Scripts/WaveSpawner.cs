@@ -45,6 +45,8 @@ public class WaveSpawner : MonoBehaviour
 
     #region Attributes
 
+    public GameObject readyButton;
+
     //an array that contains the waves in a level
     public Wave[] waves;
     
@@ -119,7 +121,7 @@ public class WaveSpawner : MonoBehaviour
         //if ready to spawn the wave
         if (readyToSpawnWave)
         {
-
+            readyButton.SetActive(false);
             //and the wave has not spawned
             if (waveSpawned == false)
             {
@@ -161,6 +163,7 @@ public class WaveSpawner : MonoBehaviour
         }
         if (!readyToSpawnWave)
         {
+            readyButton.SetActive(true);
             waveCountDownText.text = "ready to spawn wave";
             waveSpawned = false;
         }
